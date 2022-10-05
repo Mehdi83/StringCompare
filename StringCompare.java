@@ -1,17 +1,17 @@
 public class StringCompare {
-
-    static void compareStr(){
-
-        String Str1 = new String("Welcome");
-        String Str2 = new String("HW32" );
-
-        int s1l = Str1.length();
-        int s2l = Str2.length();
-
-        System.out.println(s1l>s2l);
-
-    }
     public static void main(String[] args) {
-        StringCompare.compareStr();
+        StringCompare.compareStr()
+    }
+    public static void compareStr(String Str1, String Str2) {
+        init len1 = Str1.length();
+        init len2 = Str2.length();
+
+        if (len1 > len2) {
+            return true;
+        }
+
+        else if (len1 = len2) {
+           System.out.println("Equal strings lenght");
+        }
     }
 }
